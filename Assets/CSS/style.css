@@ -1,0 +1,424 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* stylizing the header */
+header{
+    background: #fae382;
+}
+
+.inner{
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+header .inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    height: 5em;
+    align-items: center;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.heading{
+    font-family: 'Futura PT', sans-serif;   
+    font-weight: bold;
+    font-size: 200%;
+    width: 200px;                                      
+}
+
+
+header nav ul{
+    width: 350px;
+}
+
+header nav ul li{
+    display: inline;
+    margin-left: 1em;
+}
+
+header nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* creating a hover animation */
+.underlinehover{
+    display: inline-block;
+    padding-bottom: 0.4rem;
+    position: relative;
+}
+
+.underlinehover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #000000;
+    transition: width 0.25s ease-out;
+}
+
+.underlinehover:hover::before{
+    width: 100%;
+}
+
+.inner{
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+/* creating a image overlay transition */
+.container {
+    position: relative;
+    width: 70%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+.container:hover .image {
+    opacity: 0.3;
+  }
+  
+.container:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    color: #000000;
+    font-size: 32px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: bold;
+}
+
+.main{
+   font-family: 'Futura PT', sans-serif;
+   font-weight: 400;
+   text-align: justify;
+   font-size: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   line-height: 35px;
+}
+
+.aboutus{
+    background-color: #eda385;
+}
+
+h3{
+    font-size: 32px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+.img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 200px;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.about p{
+    font-size: 22px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.cbr{
+    font-size: 22px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+/* stylizing the patron section */
+.ourpatron{
+    background-color: #f47474;
+}
+
+.patron{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.tim{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 200px;
+}
+
+/* stylizing the partners section */
+.part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+    vertical-align: middle;
+    justify-items: center;
+    padding-bottom: 40px;
+}
+
+.part img{
+    width: 50%;
+    height: 50%;
+}
+
+/* stylizing the footer */
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.foot{
+    padding: 40px;
+    border-radius: 150px;
+}
+
+.footer p{
+    font-family: 'Futura PT', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* styling the building grid */
+.build{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.build p{
+    font-size: 22px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+}
+
+.build img{
+    width: 80%;
+    height: 120px;
+}
+
+/* stylizing the events grid */
+.event{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 40px;
+}
+
+.event img{
+    width: 80%;
+    height: 80%;
+}
+
+.event p{
+    font-size: 22px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    justify-items: center;
+    vertical-align: middle;
+}
+
+.past{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5em;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 40px;
+}
+
+.past img{
+    width: 80%;
+    height: 100%;
+}
+
+.past p{
+    font-size: 22px;
+    font-family: 'Futura PT', sans-serif;
+    font-weight: 400;
+    justify-items: center;
+    vertical-align: middle;
+}
+
+footer{
+    background: #6e7db7;
+}
+
+/* changing the style elements for tablet dimensions */
+@media screen and (min-width:500px) and (max-width: 1000px) {
+    .heading{
+        font-size: 120%;
+    }
+
+    header nav ul{
+        align-items: end;
+    }
+
+    header nav ul li a{
+        font-size: 16px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .main{
+        line-height: 31px;
+    }
+
+    .aboutus p{
+        font-size: 18px;
+    }
+
+    .footer p{
+        font-size: 28px;
+    }
+
+    .footer img{
+        width:100%;
+        height:100%;
+    }
+
+    .build img{
+        width: 90%;
+        height: 80%;
+    }
+
+    .build p{
+        font-size: 18px;
+    }
+
+    .event p{
+        font-size: 18px;
+    }
+
+    .past p{
+        font-size: 18px;
+    }
+
+}
+
+/* changing the style for mobil dimensions */
+@media screen and (max-width: 500px) {
+    .heading{
+        font-size: 90%;
+    }
+
+    header nav ul li{
+        align-items: end;
+    }
+
+    header nav ul li a{
+        font-size: 12px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .main{
+        line-height: 27px;
+    }
+
+    .aboutus p{
+        font-size: 14px;
+    }
+
+    .footer p{
+        font-size: 24px;
+    }
+
+    .footer img{
+        width:100%;
+        height:100%;
+    }
+
+    .build img{
+        width: 70%;
+        height: 60%;
+    }
+
+    .build p{
+        font-size: 14px;
+    }
+
+    .event p{
+        font-size: 14px;
+    }
+
+    .past p{
+        font-size: 14px;
+    }
+}
+
